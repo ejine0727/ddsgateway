@@ -1,11 +1,15 @@
 <?php
 
 return [
+
     'users1' => [
-        'base_uri' => env('USERS1_SERVICE_BASE_URL', 'http://localhost:8000'),
+        'base_uri' => env('USERS1_SERVICE_BASE_URI'),
+        'secret' => env('USERS1_SERVICE_SECRET'),
     ],
-    
+
     'users2' => [
-        'base_uri' => env('USERS2_SERVICE_BASE_URL', 'http://localhost:8080'),
+        'base_uri' => env('USERS2_SERVICE_BASE_URI'),
+        'secret' => env('USERS2_SERVICE_SECRET'),
     ],
+
 ];
